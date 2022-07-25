@@ -45,24 +45,24 @@ The "end user" imports the template they want to use. This will give them a set 
 instantiate in code to build a tree of instances that specify the elements that will be generated, but 
 limited to what the template makes available (and is therefore capable of styling).
 
-### So:
+#### So:
 The designer makes a template X which says:
 
 sites made with this template are made up of
 
-- a Site - with an optional ColourPalette
-- each Site contains one or more Pages
-- each Page contains one or more Articles
-- each Article has a Title, an Author and a Content.
+- a `Site` - with an optional `ColourPalette`
+- each `Site` contains one or more `Pages`
+- each `Page` contains one or more `Articles`
+- each `Article` has a `Title`, an `Author` and a `Content`.
 
 
-A Site will create html like this:
+A `Site` will create html like this:
 
-A Page will show a clickable tab
+A `Page` will show a clickable tab
 
-An Article will create an html element of "content" which will be styled like this
+An `Article` will create an html element of "content" which will be styled like this
 
-### Then:
+#### Then:
 An end user says, ok lets import module X into my source file in which I specify a tree of the classes
 specified in X with my content, so I create a
 ```
